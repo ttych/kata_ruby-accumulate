@@ -1,12 +1,9 @@
-#!/usr/bin/env ruby
-
 require 'minitest/autorun'
 require 'accumulate'
 
 # Test Array accumulate method
 class ArrayTest < Minitest::Test
   def test_empty_accumulation
-    skip
     assert_equal [], ([].accumulate { |e| e * e })
   end
 
